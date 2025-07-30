@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="ab1.jpg">
+        <meta name="theme-color" content="blue">
+        <script src="https://kit.fontawesome.com/b3b0a147bf.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">VasifKhan</div>
+            <nav>
+                <a target="_blank" href="home.html">Home</a>
+                <a target="_blank" href="about.html">About</a>
+                <a target="_blank" href="sub.html">Service</a>
+                <a target="_blank"  href="projects.html">Projects</a>
+                <a target="_blank" class="contect-btn" href="contect.html">Contact</a>
+            </nav>
+            <div class="hamburger" onclick="toggleMobileNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div class="mobile-nav" id="mobile-nav">
+            <a target="_blank" href="home.html">Home</a>
+            <a target="_blank" href="about.html">About</a>
+            <a target="_blank" href="sub.html">Service</a>
+            <a target="_blank" href="projects.html">Projects</a>
+            <a target="_blank" href="contect.html">Contact</a>
+            
+        </div>
+        <section class="hero">
+            <div class="hero-text">
+                <br>
+                <Br>
+                    <br>
+                    <Br>
+                        <br>
+                        <br>
+                        <br>
+
+                <h1>Hii. I' am <span>VASIFKHAN</span></h1>
+                <h1>
+            I'M A
+            <span>
+                <span>CODER</span>
+                <span>DEVLOPER</span>
+                <span>PROGRAMMER</span>
+                <span>DESIGNER</span>
+                <span>WEB DESIGNER</span>
+            </span>
+        </h1>
+                <p>Web Designer with 3+ years of experience building responsive, user-centric websites using HTML5, CSS3, JavaScript, Figma, and Adobe Creative Suite. Enhanced mobile engagement by 30% and boosted SEO by integrating on-page optimization strategies. Eager to deliver intuitive digital experiences that drive results.</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.instagram.com/mr_coder_.29?igsh=OG5jdnBmOGozNnU1">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank"  href="https://www.linkedin.com/in/vasif-khan-370306364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/vasifkhan74">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a target="_blank"  href="https://pin.it/7k7ItAlPR">
+                        <i class="fa-brands fa-pinterest"></i></a>
+                    <a target="_blank" href="https://youtube.com/@vasifkhan-s3f?si=Yy_YoA2kC1fO0YeD">
+                        <i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="buttons">
+                    <br>
+                    <Br>
+                    <br>
+                    <a target="_blank" href="#">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="ab6.jpg" alt="VasifKhan" class="hero-image">
+                </div>
+        </section>
+        <script>
+            function toggleMobileNav() {
+                const hamburger = document.querySelector('.hamburger');
+                const mobileNav = document.getElementById('mobile-nav');
+                hamburger.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+
+                if(mobileNav.classList.contains('active') ) {
+                    document.body.style.overflow = 'hidden'; // Disable scrolling
+                } else {
+                    document.body.style.overflow = ''; // Enable scrolling
+                }
+            }
+
+            document.addEventListener('click', function(event) {
+                const hamburger = document.querySelector('.hamburger');
+                const mobileNav = document.getElementById('mobile-nav');
+
+                if (mobileNav.classList.contains('active')) {
+                    if(!mobileNav.contains(event.target) && !hamburger.contains(event.target)) {
+                        toggleMobileNav();
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

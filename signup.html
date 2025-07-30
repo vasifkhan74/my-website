@@ -1,0 +1,98 @@
+<html>
+<head>
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: lightgray;
+	}
+	
+.main {
+		width: 420px;
+		color: white;
+		padding: 30px;
+		background-color: gray;
+		}
+ ::placeholder {
+ color: white;
+
+ 	}
+
+	
+.input-box input {
+		width: 100%;
+		height: 7%;
+        margin: 10 0;
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+		font-size: 16px;
+		color: white;
+		padding: 20px 45px 20px 20px;
+}
+
+.input-box input:hover {
+	background-color: lightgray;
+}
+
+ button {
+		  width: 100%;
+		  font-size: 25px;
+		  font-weight: 500;
+		  padding: 10px;
+		  color: black;
+		  background: white;
+		  border: none;
+		  cursor: pointer;
+		  background-color: lightgreen;
+}
+
+button:hover {
+	background-color: blue;
+}
+@media screen and (max-width: 768px) {
+	.main {
+		width: 80%;
+	}
+	
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="main">
+<form>
+<h1 style="text-align:center;">Sign Up</h1>
+
+<div class="input-box">
+<input type="text" placeholder="Name" required />
+</div>
+
+
+
+<div class="input-box">
+<input type="text" placeholder="Username" required />
+</div>
+
+
+<div class="input-box">
+<input type="text" id="text" name="text" placeholder="E-mail" required />
+</div>
+
+<div class="input-box">
+<input type="password" id="password" name="password" placeholder="Password" required />
+</div>
+
+<div class="input-box">
+<input type="password" id="password" name="password" placeholder="Confirm Password" required />
+</div>
+<br>
+
+<button type="submit" class="button">Sign Up</button>
+</div>
+</form>
+</body>
+</html>

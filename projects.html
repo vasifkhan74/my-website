@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <style>
+            body {
+                background: black;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            
+            }
+            .button{
+                 text-align: center;
+                width: 350px;
+                background: #ff8800;
+                border: 2px solid #ff8800;
+                padding: 15px 5px;
+                border-radius: 10px;
+                font-weight: bold;
+                text-decoration: none;
+                box-shadow: 0 4px 15px #ff8800;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            .button a {
+                color: white;
+                text-decoration: none;
+            }
+            .button:hover {
+
+                border: 2px solid #ff8800;
+                box-shadow: 0 6px 20px #ff8800;
+                transform: translateY(-2px);
+            }
+            h1 {
+                font-size: 3.5em;
+                color: white;
+            }
+            h1 > span {
+                position: relative;
+                display: inline-block;
+                color: #ff8800;
+                height: 1.25em;
+                vertical-align: bottom;
+                overflow: hidden;
+            }
+            h1 > span > span {
+                display: block;
+                animation: animateWords 5s infinite ease;
+            }
+            @keyframes animateWords {
+                0% {transform: translateY(0%);}
+                25% {transform: translateY(-100%);}
+                50% {transform: translateY(-200%);}
+                75% {transform: translateY(-300%);}
+                100% {transform: translateY(-400%);}
+                
+            }
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 2.5em;
+                }
+                .button {
+                    width: 90%;
+                }
+                
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projects</title>
+    </head>
+    <header>
+                <h1>
+            MY Projects
+            <span>
+                <span>SIMPLE LOGIN PAGE</span>
+                <span>PRINTREST GRID LAYOUT</span>
+                <span>CALCULATOR</span>
+                <span>DYANAMIC LOGIN PAGE</span>
+                <span>SEARCH    BAR</span>
+                <span>SIGN UP PAGE</span>
+            </span>
+            </header>
+            <br>
+            <br>
+            
+    <body>
+        
+        <div class="button">
+        <a target="_blank"  href="login.html">Simple login page</a>
+        </div>
+        <br>
+
+        <div class="button">
+        <a target="_blank"  href="grid.html">Grid layout</a>
+        </div>
+        <br>
+        
+        <div class="button">
+        <a target="_blank" href="calc.html">Calculator</a>
+        </div>
+        <br>
+        
+        <div class="button">
+        <a target="_blank" href="login2.html">Dynamic login page</a>
+        </div>
+        <br>
+        
+        <div class="button">
+        <a target="_blank" href="searchbar.html">Search bar</a>
+        </div>
+        <br>
+        <div class="button">
+         <a target="_blank" href="signup.html">Sign up page</a>
+            </div>
+        </body>
+
+    
+</html>

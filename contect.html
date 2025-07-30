@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #7B61FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    width: 700px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background-color: #00AFC1;
+    color: white;
+    padding: 30px;
+    width: 50%;
+}
+
+.right-section {
+    padding: 30px;
+    width: 50%;
+}
+input[type="text"],
+input[type="email"]
+{
+    color: black;
+    height: 35px;
+    width: 250px;
+    padding: 10px 20px;
+}
+
+textarea{
+    width: 250px;
+    height: 80px;
+    padding: 10px 20px ;
+}
+button {
+    background-color: #00AFC1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 120;
+}
+
+button:hover {
+    background-color: #008C9E;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+    
+}
+</style>
+    <meta charset="UTF-" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left-section">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center>
+            <h2>Let's Chat</h2>
+            <p>Whether you have a question, want to start a project or simply want to connect.</p>
+			<br>
+			<br>
+            <p>Feel free to send me a message in the contact form.</p>
+		</center>
+        </div>
+        <div class="right-section">
+            <h2 style="text-align: center;">Contact</h2>
+            <form>
+               
+
+                <input type="text" id="name" name="name" placeholder="Name" required />
+                <br>
+                <br>
+              
+                <input type="email" id="email" name="email"placeholder="E-mail" required/>
+                <br>
+                <br>
+       
+                <input type="text" id="company" name="company" placeholder="Company" required />
+                <br>
+                <Br>
+                <input type="text" name="phone" placeholder="Phone" id="phone" maxlength="10" onclick="validatePhone()" required />
+                <br>
+                <br>
+               
+                <textarea id="message" name="message" placeholder="Message" required /></textarea>
+                <br>
+                <Br>
+                    <center>
+                <button type="submit">SUBMIT</button>
+            </center>
+            </form>
+        </div>
+    </div>
+   
+    </script>
+</body>
+</html>

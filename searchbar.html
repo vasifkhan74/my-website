@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            form{
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transition: translate(-50%,-50%);
+                transition: all 1s;
+                width: 50px;
+                height: 50px;
+                background: white;
+                box-sizing: border-box;
+                border-radius: 25px;
+                border: 4px solid white;
+                padding: 5px;
+            }
+            input[type='search']{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 42.5px;
+            line-height: 30px;
+            outline:0;
+            border: 0;
+            display: none;
+            font-size: 1em;
+            border-radius: 20px;
+            padding: 0 20px;
+            }
+            .fa{
+                box-sizing: border-box;
+                padding: 10px;
+                width: 42.5px;
+                height: 42.5px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                color: #8c52ff;
+                text-align: center;
+                font-size: 1.2em;
+                transition: all 1s;
+            }
+            form:hover{
+                width: 300px;
+                cursor: pointer;
+            }
+            form:hover input[type='search']{
+                display: block;
+            }
+            form:hover .fa{
+                background: #8c52ff;
+                color: white;
+            }
+            @media screen and (max-width: 768px) {
+            
+                
+                
+               
+
+                
+                
+                
+            }
+
+        </style>
+      <script src="https://kit.fontawesome.com/b3b0a147bf.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Bar</title>
+    </head>
+    <body>
+        <form action="">
+            <input type="search" placeholder="Search Here....">
+            <i class="fa fa-search"></i>
+        </form>
+    </body>
+</html>

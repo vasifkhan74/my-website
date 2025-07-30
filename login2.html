@@ -1,0 +1,149 @@
+<html>
+<head>
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('a2.jpg') no-repeat;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+	
+.main {
+		width: 420px;
+		background: transparent;
+		color: white;
+		border-radius: 10px;
+		padding: 30px 40px;
+		border: 2px solid rgb(225, 255, 255, 0.3);
+		backdrop-filter: blur(15px);
+		box-shadow: 0 0 10px black,
+			0 0 10px black inset;
+	}
+
+ 	::placeholder {
+ 			color:black;
+		}
+
+.main .input-box {
+		position: relative;
+		width: 100%;
+		height: 50px;
+		margin: 30px 0;
+	}
+	
+.input-box input {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+		border: 3px solid white;
+		background: transparent;
+		color: black;
+		font-size: 16px;
+		padding: 20px 45px 20px 20px;
+		
+}
+.input-box i{
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		font-size: 20px;
+		color: black;
+		cursor: pointer;
+}
+	
+	button{
+                position: relative;
+                border: 2px solid #00a8ff;
+                color: white;
+                z-index: 1;
+				width: 100%;
+				height: 40px;
+				border-radius: 50px;
+				font-size: 20;
+				background: transparent;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16),
+                    0 3px 6px rgba(0, 0, 0, 0.1);
+					cursor: pointer;
+            }
+            button::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+				border-radius: 50px;
+                left: 50%;
+                right: 50%;
+                opacity: 0;
+                z-index: -1;
+                background-color: #00a8ff;
+                transition: .5s all ease;
+				cursor: pointer;
+             }
+
+             button:hover{
+                color: #fff;
+             }
+             
+             button:hover:before{
+                left: 0;
+                right: 0;
+                opacity: 1;
+             }
+			 @media screen and (max-width: 768px) {
+	body {	
+	justify-content: center;
+	align-items: center;		
+	}
+	.main {
+		width: auto;
+		height: auto;
+		padding: 20px;
+	}
+}
+		</style>
+		<link rel="icon" href="ab1.jpg">
+		<script src="https://kit.fontawesome.com/b3b0a147bf.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login</title>
+<body>
+	<form>
+<div class="main">
+<form action="">
+<h1 style="text-align:center;">LOGIN</h1>
+<hr>
+
+<div class="input-box">
+<i class="fa-solid fa-user"></i>
+<input type="text" placeholder="Username"  required />
+</div>
+
+<div class="input-box" >
+<i class="fa-solid fa-eye-slash" onclick="pwd.type = this. click ? 'text' : 'password'"></i>
+
+<input placeholder="Enter password" type="Password"  id="pwd"  required />
+</div>
+<h4><input type="checkbox">Remember me?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="forgate.html" style="color:white;">Forgot password?</a></h4> 
+
+<button>
+	<i class="fa-solid fa-right-to-bracket">&nbsp;&nbsp;&nbsp;LOGIN</i></button>
+</button>
+<center>
+<p><b style="color:blue;">Don't have an account?</b> Remember</p>
+</center>
+</div>
+</div>
+</form>
+</div>
+
+	</form>
+</body>
+</html>
+
+	
